@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Stripe</title>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center font-sohne-var p-0 m-0 w-full"
+  >
+    <div class="w-full fixed h-full -z-50 top-0">
+      <div class="w-4/5 mx-auto flex justify-between h-full">
+        <div class="w-1/2 opacity-[2] h-full bg-gray-200"></div>
+        <div class="w-1/2 border-dashed opacity-[2] h-full bg-gray-200"></div>
+        <div class="w-1/2 border-dashed opacity-[2] h-full bg-gray-200"></div>
+        <div class="w-1/2 opacity-[2] h-full bg-gray-200"></div>
+      </div>
+    </div>
+    <div
+      class="absolute origin-0 top-0 -skew-y-12 left-0 right-0 bottom-0 w-full h-1/40 -z-10"
+    >
+      <div class="w-full h-full transform">
+        <img
+          src="./assets/images/download-bg.png"
+          class="h-full w-full"
+          alt="image"
+        />
+      </div>
+    </div>
+    <div>
+      <header class="h-full w-full relative overflow-hidden">
+        <nav class="flex flex-col justify-center w-eighty mx-auto py-4">
+          <div class="flex justify-between text-white items-center">
+            <div>
+              <a class="text-3xl font-black" href="">stripe</a>
+            </div>
+            <div class="lg:flex lg:justify-center lg:visible flex-none hidden">
+              <div>
+                <a class="text-md font-semibold px-4" href="">Products</a>
+              </div>
+              <div>
+                <a class="text-md font-semibold px-4" href="">Use cases</a>
+              </div>
+              <div>
+                <a class="text-md font-semibold px-4" href="">Developers</a>
+              </div>
+              <div>
+                <a class="text-md font-semibold px-4" href="">Company</a>
+              </div>
+              <div>
+                <a class="text-md font-semibold px-4" href="">Pricing</a>
+              </div>
+            </div>
+            <button
+              class="flex bg-button-color lg:visible invisible bg-opacity-[0.3] transition-all hover:bg-opacity-[0.6] duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4 rounded-2xl"
+            >
+              <span class="m-auto text-md font-semibold">Sign in</span>
+              <div class="m-auto relative">
+                <div
+                  class="absolute w-1/10 transition-all ease-in-out duration-75 h-1/2.1 mr-0 mt-1/10.31 group-hover:translate-x-0 translate-x-1/1 z-[1000] group-hover:bg-white"
+                ></div>
+                <img
+                  class="w-3 relative group-hover:translate-x-1/1.55 translate-x-0 transition-all ease-in-out duration-75"
+                  src="./assets/images/arrow.png"
+                />
+              </div>
+            </button>
+
+            <button
+              class="lg:hidden p-3 rounded-full text-white gap-g/4 bg-button-color bg-opacity-[0.6] flex"
+            >
+              <svg width="16" height="10" viewBox="0 0 16 10">
+                <title>Open mobile navigation</title>
+                <g fill="#fff" fill-rule="#fff">
+                  <rect y="8" width="16" height="2" rx="1"></rect>
+                  <rect y="4" width="16" height="2" rx="1"></rect>
+                  <rect width="16" height="2" rx="1"></rect>
+                </g>
+              </svg>
+            </button>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <div class="mt-48 grid grid-cols-2">
+              <div>
+                <h1
+                  class="text-8xl font-extrabold leading-tight bg-clip-text bg-gradient-to-tr opacity-[.8] from-gradient-5 to-transparent"
+                >
+                  Financial infrastructure for the internet
+                </h1>
+                <p class="text-title-gray text-lg translate-y-1/30">
+                  Millions of companies of all sizes—from startups to Fortune
+                  <br />
+                  500s—use Stripe’s software and APIs to accept payments, <br />
+                  send payouts, and manage their businesses online.
+                </p>
+
+                <div class="pt-14 flex gap-g/20">
+                  <button
+                    class="flex bg-dark-blue transition-all hover:bg-opacity-[0.6] duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4 rounded-full"
+                  >
+                    <span class="m-auto text-lg text-white">Start now</span>
+                    <div class="m-auto relative">
+                      <div
+                        class="absolute w-1/10 transition-all ease-in-out duration-75 h-1/2.1 mr-0 mt-1/10.31 group-hover:translate-x-0 translate-x-1/1 z-[1000] group-hover:bg-white"
+                      ></div>
+                      <img
+                        class="w-3 relative group-hover:translate-x-1/1.55 translate-x-0 transition-all ease-in-out duration-75"
+                        src="./assets/images/arrow.png"
+                        alt="arrow"
+                      />
+                    </div>
+                  </button>
+                  <button
+                    class="flex bg-transparent transition-all duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4 rounded-2xl"
+                  >
+                    <span
+                      class="m-auto text-lg hover:text-opacity-[0.6] text-semi-gray"
+                      >Contact sales</span
+                    >
+                    <div class="m-auto relative">
+                      <div
+                        class="absolute w-1/10 transition-all ease-in-out duration-75 h-1/2.1 mr-0 mt-1/10.31 group-hover:translate-x-0 translate-x-1/1 z-[1000] group-hover:bg-opacity-[0.6] group-hover:bg-semi-gray"
+                      ></div>
+                      <img
+                        class="w-3 relative group-hover:translate-x-1/1.55 translate-x-0 transition-all ease-in-out duration-75"
+                        src="./assets/images/arrow-black.png"
+                        alt="arrow"
+                      />
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="lg:visible -mt-20 invisible">
+                <img
+                  class="absolute ml-40"
+                  src="https://i.ibb.co/q9rV42S/sdas.png"
+                  alt="phones"
+                />
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section
+        class="grid grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-y-12 w-eighty mx-auto my-20"
+      >
+        <img src="./assets/vectos/instactar.svg" />
+        <img src="./assets/vectos/saleforce.svg" />
+        <img src="./assets/vectos/amazon.svg" />
+        <img src="./assets/vectos/slack.svg" />
+        <img src="./assets/vectos/shopify.svg" />
+        <img src="./assets/vectos/google.svg" />
+        <img src="./assets/vectos/lyft.svg" />
+        <img src="./assets/vectos/zoom.svg" />
+      </section>
+
+      <section class="bg-dark-gray/10">
+        <div
+          class="grid lg:grid-cols-2 w-eighty mx-auto py-32 justify-center items-center"
+        >
+          <div class="flex flex-col gap-9">
+            <p class="text-stripe-blue font-bold left-7 text-lg">
+              Unified platform
+            </p>
+            <h1 class="text-4xl font-bold leading-10 font-sohne-var">
+              A fully integrated suite of <br />
+              payments products
+            </h1>
+            <p class="font-sohne-var text-title-gray font-light text-lg">
+              We bring together everything that’s required to build<br />
+              websites and apps that accept payments and send payouts<br />
+              globally. Stripe’s products power payments for
+              <a class="text-stripe-blue hover:text-black"
+                >online and in-<br />person retailers</a
+              >,
+              <a class="text-stripe-blue hover:text-black"
+                >subscriptions businesses</a
+              >,
+              <a class="text-stripe-blue hover:text-black"
+                >software<br />
+                platforms and marketplaces</a
+              >, and everything in between.
+            </p>
+
+            <button
+              class="bg-stripe-blue font-sohne-var text-lg w-fit text-white font-sm rounded-full flex bg-transparent transition-all hover:bg-opacity-[0.6] duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4"
+            >
+              <span class="m-auto"> Start with payment</span>
+              <div class="m-auto relative">
+                <div
+                  class="absolute w-1/10 transition-all ease-in-out duration-75 h-1/2.1 mr-0 mt-1/10.31 group-hover:translate-x-[0px] translate-x-1/1 z-[1000] group-hover:bg-white"
+                ></div>
+                <img
+                  class="w-3 relative group-hover:translate-x-1/1.55 translate-x-0 transition-all ease-in-out duration-75"
+                  src="./assets/images/arrow.png"
+                  alt="arrow"
+                />
+              </div>
+            </button>
+          </div>
+
+          <p class="font-light text-title-gray font-sohne-var text-lg pl-4">
+            We also help companies
+            <a class="text-stripe-blue hover:text-black">beat fraud</a>,
+            <a class="text-stripe-blue hover:text-black">send invoices</a
+            >,<br />
+            <a class="text-stripe-blue hover:text-black"
+              >issue virtual and physical cards</a
+            >,
+            <a class="text-stripe-blue hover:text-black"
+              >reduce friction at <br />
+              checkout</a
+            >, <a class="text-stripe-blue hover:text-black">get financing</a>,
+            <a class="text-stripe-blue hover:text-black"
+              >manage business spend</a
+            >,<br />
+            and much more.
+          </p>
+        </div>
+
+        <section class="grid grid-cols-4 grid-rows-2 gap-9 w-eighty mx-auto">
+          <img
+            src="./assets/images/v-card.png"
+            class="w-full rounded-3xl shadow-2xl"
+          />
+          <img
+            src="./assets/images/payment.png"
+            class="col-span-2 shadow-2xl w-full rounded-3xl h-full"
+          />
+          <img
+            src="./assets/images/mobile.png"
+            class="-mt-28 row-span-1 shadow-2xl rounded-3xl h-[-webkit-fill-available] w-full"
+          />
+          <img
+            src="./assets/images/footer-phone_.png"
+            class="w-full shadow-2xl row-span-2 rounded-3xl h-full -mt-64"
+          />
+          <img
+            src="./assets/images/dashboard.png"
+            class="w-full shadow-2xl rounded-3xl h-full col-span-3"
+          />
+        </section>
+      </section>
+
+      <section class="z-30 relative w-full">
+        <section
+          class="-skew-y-6 w-full py-3 bg-dark-blue z-40 top-0 left-0 right-0 absolute -mt-1/9"
+        >
+          <div
+            class="lg:flex w-eighty mx-auto py-32 justify-center items-center mt-40 skew-y-6"
+          >
+            <div class="flex flex-col gap-9 w-full">
+              <p class="text-stripe-sky-blue text-xl">Unified platform</p>
+              <h1 class="text-5xl text-white">
+                The world’s most powerful <br />
+                and easy-to-use APIs
+              </h1>
+              <p class="font-light text-gray-400 text-xl">
+                We agonize over the right abstractions so your teams<br />
+                don’t need to stitch together disparate systems or<br />
+                spend months integrating payments functionality.
+              </p>
+
+              <button
+                class="bg-stripe-sky-blue w-fit text-black font-sm px-4 py-2 rounded-full flex bg-transparent transition-all hover:bg-opacity-[0.6] duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4"
+              >
+                <span class="m-auto"> Start with payment</span>
+                <div class="m-auto relative">
+                  <div
+                    class="absolute w-1/10 transition-all ease-in-out duration-75 h-1/2.1 mr-0 mt-1/10.31 group-hover:translate-x-[0px] translate-x-1/1 z-[1000] group-hover:bg-black"
+                  ></div>
+                  <img
+                    class="w-3 relative group-hover:translate-x-1/1.55 translate-x-0 transition-all ease-in-out duration-75"
+                    src="./assets/images/arrow-black.png"
+                  />
+                </div>
+              </button>
+
+              <div class="grid lg:grid-cols-2">
+                <div>
+                  <img src="./assets/vectos/svg-1.svg" alt="" />
+                  <div class="text-white font-sohne-var">
+                    Tools for every stack
+                  </div>
+                  <p class="py-3 text-gray-400 font-sohne-var">
+                    We offer client and server<br />
+                    libraries in everything from <br />
+                    React and PHP to .NET and iOS.
+                  </p>
+
+                  <button
+                    class="hover:text-white w-fit group font-sm hover:bg-opacity-70 text-sm text-stripe-sky-blue font-semibold flex gap-2 items-center py-2 rounded-full"
+                  >
+                    See libraries
+                    <span class="relative w-3 flex items-center h-3">
+                      <span
+                        class="absolute top-0 group-hover:opacity-100 opacity-0 transition-all duration-500"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="4 "
+                          stroke="currentColor"
+                          class="w-3 h-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        class="top-0 absolute group-hover:opacity-0 transition-all duration-500"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="4"
+                          stroke="currentColor"
+                          class="w-3 h-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </div>
+                <div>
+                  <img src="./assets/vectos/svg-3.svg" alt="" />
+                  <div class="text-white">Prebuilt integrations</div>
+                  <p class="py-3 text-gray-400">
+                    Use integrations for systems<br />
+                    like Shopify, WooCommerce,<br />
+                    NetSuite, and more.
+                  </p>
+
+                  <button
+                    class="hover:text-white w-fit group font-sm hover:bg-opacity-70 text-sm text-stripe-sky-blue font-semibold flex gap-2 items-center py-2 rounded-full"
+                  >
+                    Explore partners
+                    <span class="relative w-3 flex items-center h-3">
+                      <span
+                        class="absolute top-0 group-hover:opacity-100 opacity-0 transition-all duration-500"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="4 "
+                          stroke="currentColor"
+                          class="w-3 h-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        class="top-0 absolute group-hover:opacity-0 transition-all duration-500"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="4"
+                          stroke="currentColor"
+                          class="w-3 h-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="h-full w-full">
+              <img src="./assets/images/code-1.png" alt="image" />
+              <img src="./assets/images/code-2.png" alt="image" />
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section
+        class="relative lg:mt-1/30 mt-1/32 pt-96 w-eighty mx-auto flex flex-col"
+      >
+        <div class="flex flex-col gap-8">
+          <p class="text-sky-text">Why Stripe</p>
+          <h1 class="text-5xl leading-1/3">
+            A technology-first approach to payments<br />
+            and finance
+          </h1>
+        </div>
+
+        <div class="grid gap-8 lg:grid-cols-4 text-lg">
+          <div>
+            <img src="./assets/vectos/material.svg" class="w-20" />
+            <p class="">Close to the metal</p>
+            <p class="py-1 text-title-gray">
+              From
+              <a class="hover:text-black text-sky-text" href=""
+                >direct integrations
+              </a>
+              with
+              <br />
+              card networks and banks to<br />
+              checkout flows in the browser,<br />
+              we operate on and optimize at<br />
+              every level of the financial stack.
+            </p>
+          </div>
+          <div>
+            <img src="./assets/vectos/doublePause.svg" class="w-20" />
+            <p class="">Fastest-improving platform</p>
+            <p class="py-1 text-title-gray">
+              We release
+              <a class="hover:text-black text-sky-text" href="">
+                hundreds of features
+              </a>
+              and improvements each year to help you stay ahead of industry
+              shifts. (On average, we deploy our production API 16x per day.)
+            </p>
+          </div>
+
+          <div>
+            <img src="./assets/vectos/test.svg" class="w-20" />
+            <p class="">Intelligent optimizations</p>
+            <p class="py-1 text-title-gray">
+              Our systems operate with<br />
+              <a class="hover:text-black text-sky-text" href=""> 99.99%+ </a>
+              uptime and are highly<br />
+              scalable and redundant. Stripe<br />
+              is certified to the highest<br />
+              compliance standards.
+            </p>
+          </div>
+
+          <div>
+            <img src="./assets/vectos/machine.svg" class="w-20" />
+            <p class="">Battle-tested reliability</p>
+            <p class="py-1 text-title-gray">
+              Our machine learning models<br />
+              train on
+              <a class="hover:text-black text-sky-text" href="">billions </a> of
+              data points<br />
+              and help increase revenue<br />
+              across conversion, fraud,<br />
+              revenue recovery, and more.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative mt-40 w-full">
+        <div class="absolute -skew-y-6 w-full h-full">
+          <div
+            class="relative h-full top-0 left-0 bg-semi-gray overflow-hidden"
+          ></div>
+        </div>
+
+        <div class="bg-semi-gray relative top-16">
+          <div
+            class="h-12 w-44 bg-hard-blue -skew-y-6 lg:-translate-y-[110%] md:-translate-y-[100%] sm:-translate-y-[100%] -translate-y-[180%]"
+          >
+            <div
+              class="h-12 w-24 bg-soft-green z-20 absolute top-0 -translate-y-[50%]"
+            >
+              <div
+                class="w-full h-1/2 bg-sky-text absolute bottom-0 left-0"
+              ></div>
+            </div>
+          </div>
+
+          <div class="w-eighty mx-auto">
+            <div class="flex flex-col gap-9 w-full">
+              <div class="grid grid-cols-2 mt-40">
+                <div class="">
+                  <p class="text-stripe-sky-blue text-xl px-5">Global scale</p>
+                  <h1 class="text-5xl text-white px-5">
+                    The backbone for<br />
+                    internet business
+                  </h1>
+                  <p class="font-light text-gray-400 text-xl px-5">
+                    For ambitious companies around the world, Stripe<br />
+                    makes moving money as simple, borderless, and<br />
+                    programmable as the rest of the internet. Our<br />
+                    teams are based in dozens of offices around the<br />
+                    world and we process hundreds of billions<br />
+                    of dollars each year for
+                    <span class="text-stripe-sky-blue hover:text-white"
+                      >start up fortune 500s</span
+                    >
+                  </p>
+                </div>
+
+                <img
+                  src="./assets/images/download.png"
+                  class="w-1/1000 object-cover ml-auto"
+                />
+              </div>
+
+              <div class="grid lg:grid-cols-4 pb-20">
+                <div class="space-y-3">
+                  <p
+                    class="text-white font-sohne-var text-2xl border-l-2 border-stripe-sky-blue px-5"
+                  >
+                    250M+
+                  </p>
+                  <p
+                    class="text-sm text-gray-400 font-sohne-var px-5 font-thin"
+                  >
+                    API requests per day, peaking at<br />
+                    13,000 requests a second.
+                  </p>
+                </div>
+                <div class="space-y-3">
+                  <p
+                    class="text-white font-sohne-var text-2xl border-l-2 border-stripe-sky-blue px-5"
+                  >
+                    90%s
+                  </p>
+                  <p
+                    class="text-sm text-gray-400 font-sohne-var px-5 font-thin"
+                  >
+                    of U.S. adults have bought from<br />
+                    businesses using Stripe.
+                  </p>
+                </div>
+                <div class="space-y-3">
+                  <p
+                    class="text-white text-2xl border-l-2 border-stripe-sky-blue px-5"
+                  >
+                    135+
+                  </p>
+                  <p class="text-sm text-gray-400 px-5 font-thin">
+                    currencies and payment<br />
+                    methods supported.
+                  </p>
+                </div>
+                <div class="space-y-3">
+                  <p
+                    class="text-white text-2xl border-l-2 border-stripe-sky-blue px-5"
+                  >
+                    35+
+                  </p>
+                  <p class="text-sm text-gray-400 px-5 font-thin">
+                    countries with local acquiring,<br />
+                    optimizing acceptance rates.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-20 py-20 w-eighty mx-auto flex flex-col gap-8">
+        <div class="grid lg:grid-cols-2">
+          <div class="space-y-7">
+            <h2 class="font-sohne-var text-2xl">Ready to get started?</h2>
+            <p class="font-sohne-var text-lg text-title-gray">
+              Explore
+              <span class="text-stripe-blue hover:text-black"
+                >Stripe Payments</span
+              >, or create an account<br />
+              instantly and start accepting payments. You can<br />
+              also contact us to design a custom package for<br />
+              your business.
+            </p>
+            <div class="mt-7 flex gap-5">
+              <button
+                class="bg-stripe-blue w-fit text-white font-sohne-var font-sm px-4 py-2 rounded-full flex bg-transparent transition-all hover:bg-opacity-[0.6] duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4"
+              >
+                <span class="m-auto"> Start now</span>
+                <div class="m-auto relative">
+                  <div
+                    class="absolute w-1/10 transition-all ease-in-out duration-75 h-1/2.1 mr-0 mt-1/10.31 group-hover:translate-x-0 translate-x-1/1 z-[1000] group-hover:bg-white"
+                  ></div>
+                  <img
+                    class="w-3 relative group-hover:translate-x-1/1.55 translate-x-0 transition-all ease-in-out duration-75"
+                    src="./assets/images/arrow.png"
+                  />
+                </div>
+              </button>
+
+              <button
+                class="hover:text-dark-blue font-sohne-var w-fit group font-sm hover:bg-opacity-70 text-sm text-stripe-blue font-semibold flex gap-2 items-center py-2 rounded-full"
+              >
+                Contact sales
+                <span class="relative w-3 flex items-center h-3">
+                  <span
+                    class="absolute top-0 group-hover:opacity-100 opacity-0 transition-all duration-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="4 "
+                      stroke="currentColor"
+                      class="w-3 h-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="top-0 absolute group-hover:opacity-0 transition-all duration-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="4"
+                      stroke="currentColor"
+                      class="w-3 h-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:grid lg:grid-cols-2">
+            <div>
+              <img src="./assets/vectos/pricing.svg" class="h-20" />
+              <p class="font-sohne-var text-lg border-l border-sky-text px-4">
+                Intelligent optimizations
+              </p>
+              <p class="py-1 text-title-gray text-lg px-4">
+                Integrated per-transaction<br />
+                pricing with no hidden fees.
+              </p>
+              <button
+                class="hover:text-dark-blue px-4 font-sohne-var w-fit group font-sm hover:bg-opacity-70 text-sm text-stripe-blue font-semibold flex gap-2 items-center py-2 rounded-full"
+              >
+                Pricing Details
+                <span class="relative w-3 flex items-center h-3">
+                  <span
+                    class="absolute top-0 group-hover:opacity-100 opacity-0 transition-all duration-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="4 "
+                      stroke="currentColor"
+                      class="w-3 h-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="top-0 absolute group-hover:opacity-0 transition-all duration-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="4"
+                      stroke="currentColor"
+                      class="w-3 h-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+
+            <div>
+              <img src="./assets/vectos/code-mark.svg" class="h-20" />
+              <p class="font-sohne-var border-l border-sky-text px-4 text-lg">
+                Battle-tested reliability
+              </p>
+              <p class="py-1 text-title-gray text-lg px-4">
+                Get up and running with Stripe<br />
+                in as little as 10 minutes.
+              </p>
+
+              <button
+                class="hover:text-dark-blue px-4 font-sohne-var w-fit group font-sm hover:bg-opacity-70 text-sm text-stripe-blue font-semibold flex gap-2 items-center py-2 rounded-full"
+              >
+                API reference
+                <span class="relative w-3 flex items-center h-3">
+                  <span
+                    class="absolute top-0 group-hover:opacity-100 opacity-0 transition-all duration-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="4 "
+                      stroke="currentColor"
+                      class="w-3 h-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="top-0 absolute group-hover:opacity-0 transition-all duration-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="4"
+                      stroke="currentColor"
+                      class="w-3 h-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative mt-40">
+        <div
+          class="h-12 w-64 bg-soft-green -skew-y-6 lg:-translate-y-[200%] -translate-y-[100%] absolute right-0 top-0 z-[100]"
+        >
+          <div
+            class="h-12 w-32 bg-sky-text z-20 absolute top-0 right-5 translate-y-[50%]"
+          >
+            <div
+              class="w-full h-1/2 bg-hard-blue absolute bottom-0 right-0"
+            ></div>
+          </div>
+        </div>
+        <div class="absolute -skew-y-6 w-full h-full">
+          <div
+            class="relative h-full top-0 left-0 bg-light-gray overflow-hidden"
+          ></div>
+        </div>
+
+        <footer class="bg-light-gray flex flex-col relative top-16 w-full">
+          <div class="h-12 w-44 bg-hard-blue -skew-y-6 -translate-y-[110%]">
+            <div
+              class="h-12 w-24 bg-soft-green z-20 absolute top-0 -translate-y-[50%]"
+            >
+              <div
+                class="w-full h-1/2 bg-sky-text absolute bottom-0 left-0"
+              ></div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-4 justify-center pb-20 w-eighty mx-auto">
+            <div
+              class="flex flex-col justify-between gap-4 mt-40 text-semi-gray"
+            >
+              <div class="font-sohne-var flex flex-col gap-1">
+                <div>
+                  <a class="text-3xl font-sohne-var font-black" href=""
+                    >stripe</a
+                  >
+                </div>
+                <h1 class="flex items-center text-lg font-thin gap-2">
+                  <svg
+                    class="LocaleControl__triggerIcon"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.54 8.04h4.42v4.43c0 .57.76.75 1.01.24l4.96-9.93a.54.54 0 0 0-.72-.72L3.3 7.03c-.5.25-.33 1.01.24 1.01"
+                      fill="#0A2540"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                  United States
+                </h1>
+
+                <p class="flex text-lg font-thin items-center gap-2">
+                  <svg
+                    class="LocaleControl__triggerIcon"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.5 2C10.91 2 13 4.01 13 6.5c0 2.07-1.45 3.82-3.92 4.34L6.62 13.3a.66.66 0 0 1-1.12-.46v-2.1C3.29 10.12 2 8.45 2 6.5 2 4.01 4.09 2 7.5 2z"
+                      fill="#0A2540"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                  English(United States)
+                </p>
+              </div>
+              <p class="mt-1/100">© 2022 Stripe, Inc.</p>
+            </div>
+            <div
+              class="mt-40 text-lg font-sohne-var flex flex-col text-semi-gray gap-2"
+            >
+              <p class="font-semibold text-lg font-sohne-var">Products</p>
+              <p>Atlas</p>
+              <p>Billing</p>
+              <p>Capital</p>
+              <p>Checkout</p>
+              <p>Climate</p>
+              <p>Connect</p>
+              <p>Corporate Card</p>
+              <p>Data Pipeline</p>
+              <p>Elements</p>
+              <p>Financial Connections</p>
+              <p>Identity</p>
+              <p>Invoicing</p>
+              <p>Issuing</p>
+              <p>Payments</p>
+              <p>Payment Links</p>
+              <p>Payouts</p>
+              <p>Pricing</p>
+              <p>Radar</p>
+              <p>Revenue Recognition</p>
+              <p>Sigma</p>
+              <p>Tax</p>
+              <p>Terminal</p>
+              <p>Treasury</p>
+            </div>
+            <div
+              class="mt-40 flex flex-col text-lg font-sohne-var text-semi-gray gap-2"
+            >
+              <p class="font-semibold">Use cases</p>
+              <p>E-Commerce</p>
+              <p>SaaS</p>
+              <p>Marketplaces</p>
+              <p>Embedded Finance</p>
+              <p>Platforms</p>
+              <p>Creator Economy</p>
+              <p>Crypto</p>
+              <p>Global Businesses</p>
+              <div class="flex flex-col gap-2 py-7">
+                <p class="font-semibold">Integrations & Custom Solutions</p>
+                <p>App Marketplace</p>
+                <p>Partner Ecosystem</p>
+                <p>Professional Services</p>
+              </div>
+              <div class="flex flex-col gap-2 py-7">
+                <p class="font-semibold">Developers</p>
+                <p>Documentation</p>
+                <p>API reference</p>
+                <p>API status</p>
+                <p>API changelog</p>
+                <p>Build a Stripe App</p>
+              </div>
+            </div>
+            <div
+              class="mt-40 mr-40 flex text-lg font-sohne-var flex-col text-semi-gray gap-2"
+            >
+              <p class="font-semibold">Resources</p>
+              <p>Support Centre</p>
+              <p>Support Plans</p>
+              <p>Guides</p>
+              <p>Customer Stories</p>
+              <p>Blog</p>
+              <p>Annual Conference</p>
+              <p>Privacy & terms</p>
+              <p>Licences</p>
+              <p>COVID-19</p>
+              <p>Sitemap</p>
+              <p>Cookie settings</p>
+              <div class="flex flex-col gap-2 py-7">
+                <p class="font-semibold">Company</p>
+                <p>Jobs</p>
+                <p>Newsroom</p>
+                <p>Stripe Press</p>
+                <p>Become a Partner</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>
