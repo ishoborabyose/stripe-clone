@@ -22,13 +22,17 @@
     <div
       class="absolute origin-0 top-0 -skew-y-12 left-0 right-0 bottom-0 w-full h-1/40 -z-10"
     >
-      <div
-        class="w-full h-full transform bg-gradient-to-r from-gradient-1 via-gradient-2 to-gradient-4"
-      ></div>
+      <div class="w-full h-full transform">
+        <img
+          src="./assets/images/download-bg.png"
+          class="h-full w-full"
+          alt="image"
+        />
+      </div>
     </div>
     <div>
       <header class="h-full w-full relative overflow-hidden">
-        <nav class="flex flex-col justify-center w-seventy mx-auto py-4">
+        <nav class="flex flex-col justify-center w-eighty mx-auto py-4">
           <div class="flex justify-between text-white items-center">
             <div>
               <a class="text-3xl font-black" href="">stripe</a>
@@ -51,7 +55,7 @@
               </div>
             </div>
             <button
-              class="flex bg-button-color transition-all hover:bg-opacity-[0.3] duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4 rounded-2xl"
+              class="flex bg-button-color lg:visible invisible bg-opacity-[0.3] transition-all hover:bg-opacity-[0.6] duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4 rounded-2xl"
             >
               <span class="m-auto text-md font-semibold">Sign in</span>
               <div class="m-auto relative">
@@ -60,9 +64,22 @@
                 ></div>
                 <img
                   class="w-3 relative group-hover:translate-x-1/1.55 translate-x-0 transition-all ease-in-out duration-75"
-                  src="./assets/arrow.png"
+                  src="./assets/images/arrow.png"
                 />
               </div>
+            </button>
+
+            <button
+              class="lg:hidden p-3 rounded-full text-white gap-g/4 bg-button-color bg-opacity-[0.6] flex"
+            >
+              <svg width="16" height="10" viewBox="0 0 16 10">
+                <title>Open mobile navigation</title>
+                <g fill="#fff" fill-rule="#fff">
+                  <rect y="8" width="16" height="2" rx="1"></rect>
+                  <rect y="4" width="16" height="2" rx="1"></rect>
+                  <rect width="16" height="2" rx="1"></rect>
+                </g>
+              </svg>
             </button>
           </div>
 
@@ -70,11 +87,11 @@
             <div class="mt-48 grid grid-cols-2">
               <div>
                 <h1
-                  class="text-7xl mt-14 font-extrabold leading-tight bg-clip-text bg-gradient-to-tr opacity-[.9] from-gradient-5 to-transparent"
+                  class="text-8xl font-extrabold leading-tight bg-clip-text bg-gradient-to-tr opacity-[.8] from-gradient-5 to-transparent"
                 >
                   Financial infrastructure for the internet
                 </h1>
-                <p class="text-gray-500 text-lg translate-y-1/30">
+                <p class="text-title-gray text-lg translate-y-1/30">
                   Millions of companies of all sizes—from startups to Fortune
                   <br />
                   500s—use Stripe’s software and APIs to accept payments, <br />
@@ -83,33 +100,34 @@
 
                 <div class="pt-14 flex gap-g/20">
                   <button
-                    class="flex bg-dark-blue transition-all hover:bg-opacity-[0.6] duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4 rounded-2xl"
+                    class="flex bg-dark-blue transition-all hover:bg-opacity-[0.6] duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4 rounded-full"
                   >
                     <span class="m-auto text-lg text-white">Start now</span>
                     <div class="m-auto relative">
                       <div
-                        class="absolute w-1/10 transition-all ease-in-out duration-75 h-1/2.1 mr-0 mt-1/10.31 group-hover:translate-x-[0px] translate-x-1/1 z-[1000] group-hover:bg-white"
+                        class="absolute w-1/10 transition-all ease-in-out duration-75 h-1/2.1 mr-0 mt-1/10.31 group-hover:translate-x-0 translate-x-1/1 z-[1000] group-hover:bg-white"
                       ></div>
                       <img
                         class="w-3 relative group-hover:translate-x-1/1.55 translate-x-0 transition-all ease-in-out duration-75"
-                        src="./assets/arrow.png"
+                        src="./assets/images/arrow.png"
                         alt="arrow"
                       />
                     </div>
                   </button>
                   <button
-                    class="flex bg-transparent transition-all hover:bg-opacity-[0.6] duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4 rounded-2xl"
+                    class="flex bg-transparent transition-all duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4 rounded-2xl"
                   >
-                    <span class="m-auto text-lg text-semi-gray"
+                    <span
+                      class="m-auto text-lg hover:text-opacity-[0.6] text-semi-gray"
                       >Contact sales</span
                     >
                     <div class="m-auto relative">
                       <div
-                        class="absolute w-1/10 transition-all ease-in-out duration-75 h-1/2.1 mr-0 mt-1/10.31 group-hover:translate-x-[0px] translate-x-1/1 z-[1000] group-hover:bg-semi-gray"
+                        class="absolute w-1/10 transition-all ease-in-out duration-75 h-1/2.1 mr-0 mt-1/10.31 group-hover:translate-x-0 translate-x-1/1 z-[1000] group-hover:bg-opacity-[0.6] group-hover:bg-semi-gray"
                       ></div>
                       <img
                         class="w-3 relative group-hover:translate-x-1/1.55 translate-x-0 transition-all ease-in-out duration-75"
-                        src="./assets/arrow-black.png"
+                        src="./assets/images/arrow-black.png"
                         alt="arrow"
                       />
                     </div>
@@ -117,7 +135,7 @@
                 </div>
               </div>
 
-              <div class="lg:visible invisible">
+              <div class="lg:visible -mt-20 invisible">
                 <img
                   class="absolute ml-40"
                   src="https://i.ibb.co/q9rV42S/sdas.png"
@@ -130,7 +148,7 @@
       </header>
 
       <section
-        class="grid grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-y-12 w-seventy mx-auto my-20"
+        class="grid grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-y-12 w-eighty mx-auto my-20"
       >
         <img src="./assets/vectos/instactar.svg" />
         <img src="./assets/vectos/saleforce.svg" />
@@ -144,7 +162,7 @@
 
       <section class="bg-dark-gray/10">
         <div
-          class="grid lg:grid-cols-2 w-seventy mx-auto py-32 justify-center items-center"
+          class="grid lg:grid-cols-2 w-eighty mx-auto py-32 justify-center items-center"
         >
           <div class="flex flex-col gap-9">
             <p class="text-stripe-blue font-bold left-7 text-lg">
@@ -154,14 +172,17 @@
               A fully integrated suite of <br />
               payments products
             </h1>
-            <p class="font-sohne-var text-lg font-light text-gray-500">
+            <p class="font-sohne-var text-title-gray font-light text-lg">
               We bring together everything that’s required to build<br />
               websites and apps that accept payments and send payouts<br />
               globally. Stripe’s products power payments for
-              <a class="text-stripe-blue"
+              <a class="text-stripe-blue hover:text-black"
                 >online and in-<br />person retailers</a
-              >, <a class="text-stripe-blue">subscriptions businesses</a>,
-              <a class="text-stripe-blue"
+              >,
+              <a class="text-stripe-blue hover:text-black"
+                >subscriptions businesses</a
+              >,
+              <a class="text-stripe-blue hover:text-black"
                 >software<br />
                 platforms and marketplaces</a
               >, and everything in between.
@@ -177,27 +198,33 @@
                 ></div>
                 <img
                   class="w-3 relative group-hover:translate-x-1/1.55 translate-x-0 transition-all ease-in-out duration-75"
-                  src="./assets/arrow.png"
+                  src="./assets/images/arrow.png"
                   alt="arrow"
                 />
               </div>
             </button>
           </div>
 
-          <p class="font-light text-gray-500 font-sohne-var text-lg pl-4">
+          <p class="font-light text-title-gray font-sohne-var text-lg pl-4">
             We also help companies
-            <a class="text-stripe-blue">beat fraud</a>,
-            <a class="text-stripe-blue">send invoices</a>,<br />
-            <a class="text-stripe-blue">issue virtual and physical cards</a>,
-            <a class="text-stripe-blue"
+            <a class="text-stripe-blue hover:text-black">beat fraud</a>,
+            <a class="text-stripe-blue hover:text-black">send invoices</a
+            >,<br />
+            <a class="text-stripe-blue hover:text-black"
+              >issue virtual and physical cards</a
+            >,
+            <a class="text-stripe-blue hover:text-black"
               >reduce friction at <br />
               checkout</a
-            >, <a class="text-stripe-blue">get financing</a>,
-            <a class="text-stripe-blue">manage business spend</a>,<br />
+            >, <a class="text-stripe-blue hover:text-black">get financing</a>,
+            <a class="text-stripe-blue hover:text-black"
+              >manage business spend</a
+            >,<br />
             and much more.
           </p>
         </div>
-        <section class="grid grid-cols-4 grid-rows-2 gap-9 w-seventy mx-auto">
+
+        <section class="grid grid-cols-4 grid-rows-2 gap-9 w-eighty mx-auto">
           <img
             src="./assets/images/v-card.png"
             class="w-full rounded-3xl shadow-2xl"
@@ -226,7 +253,7 @@
           class="-skew-y-6 w-full py-3 bg-dark-blue z-40 top-0 left-0 right-0 absolute -mt-1/9"
         >
           <div
-            class="lg:flex w-seventy mx-auto py-32 justify-center items-center mt-40 skew-y-6"
+            class="lg:flex w-eighty mx-auto py-32 justify-center items-center mt-40 skew-y-6"
           >
             <div class="flex flex-col gap-9 w-full">
               <p class="text-stripe-sky-blue text-xl">Unified platform</p>
@@ -243,14 +270,14 @@
               <button
                 class="bg-stripe-sky-blue w-fit text-black font-sm px-4 py-2 rounded-full flex bg-transparent transition-all hover:bg-opacity-[0.6] duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4"
               >
-                <span class="m-auto"> Start with payement</span>
+                <span class="m-auto"> Start with payment</span>
                 <div class="m-auto relative">
                   <div
                     class="absolute w-1/10 transition-all ease-in-out duration-75 h-1/2.1 mr-0 mt-1/10.31 group-hover:translate-x-[0px] translate-x-1/1 z-[1000] group-hover:bg-black"
                   ></div>
                   <img
                     class="w-3 relative group-hover:translate-x-1/1.55 translate-x-0 transition-all ease-in-out duration-75"
-                    src="./assets/arrow-black.png"
+                    src="./assets/images/arrow-black.png"
                   />
                 </div>
               </button>
@@ -268,18 +295,47 @@
                   </p>
 
                   <button
-                    class="hover:text-white w-fit text-stripe-sky-blue font-sm px-4 py-2 rounded-full flex bg-transparent transition-all hover:bg-opacity-[0.6] duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4"
+                    class="hover:text-white w-fit group font-sm hover:bg-opacity-70 text-sm text-stripe-sky-blue font-semibold flex gap-2 items-center py-2 rounded-full"
                   >
-                    <span class="m-auto"> See libraries</span>
-                    <div class="m-auto relative">
-                      <div
-                        class="absolute w-1/10 transition-all ease-in-out duration-75 h-1/2.1 mr-0 mt-1/10.31 group-hover:translate-x-[0px] translate-x-1/1 z-[1000] group-hover:bg-white"
-                      ></div>
-                      <img
-                        class="w-3 relative group-hover:translate-x-1/1.55 translate-x-0 transition-all ease-in-out duration-75"
-                        src="./assets/arrow.png"
-                      />
-                    </div>
+                    See libraries
+                    <span class="relative w-3 flex items-center h-3">
+                      <span
+                        class="absolute top-0 group-hover:opacity-100 opacity-0 transition-all duration-500"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="4 "
+                          stroke="currentColor"
+                          class="w-3 h-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        class="top-0 absolute group-hover:opacity-0 transition-all duration-500"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="4"
+                          stroke="currentColor"
+                          class="w-3 h-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                          />
+                        </svg>
+                      </span>
+                    </span>
                   </button>
                 </div>
                 <div>
@@ -290,19 +346,49 @@
                     like Shopify, WooCommerce,<br />
                     NetSuite, and more.
                   </p>
+
                   <button
-                    class="hover:text-white w-fit text-stripe-sky-blue font-sm px-4 py-2 rounded-full flex bg-transparent transition-all hover:bg-opacity-[0.6] duration-500 group pl-4 pr-3 pt-1 pb-p/4 gap-g/4"
+                    class="hover:text-white w-fit group font-sm hover:bg-opacity-70 text-sm text-stripe-sky-blue font-semibold flex gap-2 items-center py-2 rounded-full"
                   >
-                    <span class="m-auto"> Explore partners</span>
-                    <div class="m-auto relative">
-                      <div
-                        class="absolute w-1/10 transition-all ease-in-out duration-75 h-1/2.1 mr-0 mt-1/10.31 group-hover:translate-x-0 translate-x-1/1 z-[1000] group-hover:bg-white"
-                      ></div>
-                      <img
-                        class="w-3 relative group-hover:translate-x-1/1.55 translate-x-0 transition-all ease-in-out duration-75"
-                        src="./assets/arrow.png"
-                      />
-                    </div>
+                    Explore partners
+                    <span class="relative w-3 flex items-center h-3">
+                      <span
+                        class="absolute top-0 group-hover:opacity-100 opacity-0 transition-all duration-500"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="4 "
+                          stroke="currentColor"
+                          class="w-3 h-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                          />
+                        </svg>
+                      </span>
+                      <span
+                        class="top-0 absolute group-hover:opacity-0 transition-all duration-500"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="4"
+                          stroke="currentColor"
+                          class="w-3 h-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                          />
+                        </svg>
+                      </span>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -315,7 +401,9 @@
         </section>
       </section>
 
-      <section class="lg:mt-1/30 mt-1/32 pt-96 w-seventy mx-auto flex flex-col">
+      <section
+        class="relative lg:mt-1/30 mt-1/32 pt-96 w-eighty mx-auto flex flex-col"
+      >
         <div class="flex flex-col gap-8">
           <p class="text-sky-text">Why Stripe</p>
           <h1 class="text-5xl leading-1/3">
@@ -323,12 +411,18 @@
             and finance
           </h1>
         </div>
-        <div class="grid gap-8 lg:grid-cols-4">
+
+        <div class="grid gap-8 lg:grid-cols-4 text-lg">
           <div>
             <img src="./assets/vectos/material.svg" class="w-20" />
             <p class="">Close to the metal</p>
-            <p class="py-1 text-gray-400">
-              From direct integrations with<br />
+            <p class="py-1 text-title-gray">
+              From
+              <a class="hover:text-black text-sky-text" href=""
+                >direct integrations
+              </a>
+              with
+              <br />
               card networks and banks to<br />
               checkout flows in the browser,<br />
               we operate on and optimize at<br />
@@ -338,21 +432,23 @@
           <div>
             <img src="./assets/vectos/doublePause.svg" class="w-20" />
             <p class="">Fastest-improving platform</p>
-            <p class="py-1 text-gray-400">
-              We release hundreds of features<br />
-              and improvements each year to<br />
-              help you stay ahead of industry<br />
-              shifts. (On average, we deploy<br />
-              our production API 16x per day.)
+            <p class="py-1 text-title-gray">
+              We release
+              <a class="hover:text-black text-sky-text" href="">
+                hundreds of features
+              </a>
+              and improvements each year to help you stay ahead of industry
+              shifts. (On average, we deploy our production API 16x per day.)
             </p>
           </div>
 
           <div>
             <img src="./assets/vectos/test.svg" class="w-20" />
             <p class="">Intelligent optimizations</p>
-            <p class="py-1 text-gray-400">
+            <p class="py-1 text-title-gray">
               Our systems operate with<br />
-              99.99%+ uptime and are highly<br />
+              <a class="hover:text-black text-sky-text" href=""> 99.99%+ </a>
+              uptime and are highly<br />
               scalable and redundant. Stripe<br />
               is certified to the highest<br />
               compliance standards.
@@ -362,9 +458,11 @@
           <div>
             <img src="./assets/vectos/machine.svg" class="w-20" />
             <p class="">Battle-tested reliability</p>
-            <p class="py-1 text-gray-400">
+            <p class="py-1 text-title-gray">
               Our machine learning models<br />
-              train on billions of data points<br />
+              train on
+              <a class="hover:text-black text-sky-text" href="">billions </a> of
+              data points<br />
               and help increase revenue<br />
               across conversion, fraud,<br />
               revenue recovery, and more.
@@ -373,7 +471,7 @@
         </div>
       </section>
 
-      <section class="relative w-full">
+      <section class="relative mt-40 w-full">
         <div class="absolute -skew-y-6 w-full h-full">
           <div
             class="relative h-full top-0 left-0 bg-semi-gray overflow-hidden"
@@ -381,9 +479,21 @@
         </div>
 
         <div class="bg-semi-gray relative top-16">
-          <div class="w-seventy mx-auto">
+          <div
+            class="h-12 w-44 bg-hard-blue -skew-y-6 lg:-translate-y-[110%] md:-translate-y-[100%] sm:-translate-y-[100%] -translate-y-[180%]"
+          >
+            <div
+              class="h-12 w-24 bg-soft-green z-20 absolute top-0 -translate-y-[50%]"
+            >
+              <div
+                class="w-full h-1/2 bg-sky-text absolute bottom-0 left-0"
+              ></div>
+            </div>
+          </div>
+
+          <div class="w-eighty mx-auto">
             <div class="flex flex-col gap-9 w-full">
-              <div class="grid grid-cols-2 mt-80">
+              <div class="grid grid-cols-2 mt-40">
                 <div class="">
                   <p class="text-stripe-sky-blue text-xl px-5">Global scale</p>
                   <h1 class="text-5xl text-white px-5">
@@ -397,14 +507,14 @@
                     teams are based in dozens of offices around the<br />
                     world and we process hundreds of billions<br />
                     of dollars each year for
-                    <span class="text-stripe-sky-blue"
+                    <span class="text-stripe-sky-blue hover:text-white"
                       >start up fortune 500s</span
                     >
                   </p>
                 </div>
 
                 <img
-                  src="./assets/download.png"
+                  src="./assets/images/download.png"
                   class="w-1/1000 object-cover ml-auto"
                 />
               </div>
@@ -464,14 +574,15 @@
         </div>
       </section>
 
-      <section class="mt-20 py-20 w-seventy mx-auto flex flex-col gap-8">
+      <section class="mt-20 py-20 w-eighty mx-auto flex flex-col gap-8">
         <div class="grid lg:grid-cols-2">
           <div class="space-y-7">
             <h2 class="font-sohne-var text-2xl">Ready to get started?</h2>
-            <p class="font-sohne-var text-gray-500">
+            <p class="font-sohne-var text-lg text-title-gray">
               Explore
-              <span class="text-stripe-blue">Stripe Payments</span>, or create
-              an account<br />
+              <span class="text-stripe-blue hover:text-black"
+                >Stripe Payments</span
+              >, or create an account<br />
               instantly and start accepting payments. You can<br />
               also contact us to design a custom package for<br />
               your business.
@@ -487,26 +598,53 @@
                   ></div>
                   <img
                     class="w-3 relative group-hover:translate-x-1/1.55 translate-x-0 transition-all ease-in-out duration-75"
-                    src="./assets/arrow.png"
+                    src="./assets/images/arrow.png"
                   />
                 </div>
               </button>
 
               <button
-                class="font-bold text-sm px-4 py-2 flex gap-2 text-stripe-blue items-center"
+                class="hover:text-dark-blue font-sohne-var w-fit group font-sm hover:bg-opacity-70 text-sm text-stripe-blue font-semibold flex gap-2 items-center py-2 rounded-full"
               >
-                Contact sales<svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  class="w-5 h-5"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+                Contact sales
+                <span class="relative w-3 flex items-center h-3">
+                  <span
+                    class="absolute top-0 group-hover:opacity-100 opacity-0 transition-all duration-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="4 "
+                      stroke="currentColor"
+                      class="w-3 h-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="top-0 absolute group-hover:opacity-0 transition-all duration-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="4"
+                      stroke="currentColor"
+                      class="w-3 h-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -514,76 +652,156 @@
           <div class="flex flex-col lg:grid lg:grid-cols-2">
             <div>
               <img src="./assets/vectos/pricing.svg" class="h-20" />
-              <p class="font-sohne-var border-l border-sky-text px-4 text-sm">
+              <p class="font-sohne-var text-lg border-l border-sky-text px-4">
                 Intelligent optimizations
               </p>
-              <p class="py-1 text-gray-400 px-4">
+              <p class="py-1 text-title-gray text-lg px-4">
                 Integrated per-transaction<br />
                 pricing with no hidden fees.
               </p>
               <button
-                class="text-sm px-4 py-2 flex gap-2 text-stripe-blue items-center"
+                class="hover:text-dark-blue px-4 font-sohne-var w-fit group font-sm hover:bg-opacity-70 text-sm text-stripe-blue font-semibold flex gap-2 items-center py-2 rounded-full"
               >
                 Pricing Details
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  class="w-5 h-5"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+                <span class="relative w-3 flex items-center h-3">
+                  <span
+                    class="absolute top-0 group-hover:opacity-100 opacity-0 transition-all duration-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="4 "
+                      stroke="currentColor"
+                      class="w-3 h-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="top-0 absolute group-hover:opacity-0 transition-all duration-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="4"
+                      stroke="currentColor"
+                      class="w-3 h-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </span>
+                </span>
               </button>
             </div>
 
             <div>
               <img src="./assets/vectos/code-mark.svg" class="h-20" />
-              <p class="font-sohne-var border-l border-sky-text px-4 text-sm">
+              <p class="font-sohne-var border-l border-sky-text px-4 text-lg">
                 Battle-tested reliability
               </p>
-              <p class="py-1 text-gray-400 px-4">
+              <p class="py-1 text-title-gray text-lg px-4">
                 Get up and running with Stripe<br />
                 in as little as 10 minutes.
               </p>
+
               <button
-                class="text-sm px-4 py-2 flex gap-2 text-stripe-blue items-center"
+                class="hover:text-dark-blue px-4 font-sohne-var w-fit group font-sm hover:bg-opacity-70 text-sm text-stripe-blue font-semibold flex gap-2 items-center py-2 rounded-full"
               >
                 API reference
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  class="w-5 h-5"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+                <span class="relative w-3 flex items-center h-3">
+                  <span
+                    class="absolute top-0 group-hover:opacity-100 opacity-0 transition-all duration-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="4 "
+                      stroke="currentColor"
+                      class="w-3 h-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="top-0 absolute group-hover:opacity-0 transition-all duration-500"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="4"
+                      stroke="currentColor"
+                      class="w-3 h-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="relative">
+      <section class="relative mt-40">
+        <div
+          class="h-12 w-64 bg-soft-green -skew-y-6 lg:-translate-y-[200%] -translate-y-[100%] absolute right-0 top-0 z-[100]"
+        >
+          <div
+            class="h-12 w-32 bg-sky-text z-20 absolute top-0 right-5 translate-y-[50%]"
+          >
+            <div
+              class="w-full h-1/2 bg-hard-blue absolute bottom-0 right-0"
+            ></div>
+          </div>
+        </div>
         <div class="absolute -skew-y-6 w-full h-full">
           <div
             class="relative h-full top-0 left-0 bg-light-gray overflow-hidden"
           ></div>
         </div>
+
         <footer class="bg-light-gray flex flex-col relative top-16 w-full">
-          <div class="grid grid-cols-4 justify-center pb-20 w-[70%] mx-auto">
+          <div class="h-12 w-44 bg-hard-blue -skew-y-6 -translate-y-[110%]">
             <div
-              class="flex flex-col justify-between gap-2 mt-80 text-semi-gray"
+              class="h-12 w-24 bg-soft-green z-20 absolute top-0 -translate-y-[50%]"
             >
-              <div class="font-thin">
-                <h1 class="flex items-center gap-2 font-semibold">
+              <div
+                class="w-full h-1/2 bg-sky-text absolute bottom-0 left-0"
+              ></div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-4 justify-center pb-20 w-eighty mx-auto">
+            <div
+              class="flex flex-col justify-between gap-4 mt-40 text-semi-gray"
+            >
+              <div class="font-sohne-var flex flex-col gap-1">
+                <div>
+                  <a class="text-3xl font-sohne-var font-black" href=""
+                    >stripe</a
+                  >
+                </div>
+                <h1 class="flex items-center text-lg font-thin gap-2">
                   <svg
                     class="LocaleControl__triggerIcon"
                     width="16"
@@ -596,10 +814,10 @@
                       fill-rule="evenodd"
                     ></path>
                   </svg>
-                  Stripe
+                  United States
                 </h1>
 
-                <p class="flex items-center gap-2">
+                <p class="flex text-lg font-thin items-center gap-2">
                   <svg
                     class="LocaleControl__triggerIcon"
                     width="16"
@@ -612,13 +830,15 @@
                       fill-rule="evenodd"
                     ></path>
                   </svg>
-                  English(United Kingdom)
+                  English(United States)
                 </p>
               </div>
               <p class="mt-1/100">© 2022 Stripe, Inc.</p>
             </div>
-            <div class="mt-80 flex flex-col text-semi-gray gap-2">
-              <p class="font-semibold">Products</p>
+            <div
+              class="mt-40 text-lg font-sohne-var flex flex-col text-semi-gray gap-2"
+            >
+              <p class="font-semibold text-lg font-sohne-var">Products</p>
               <p>Atlas</p>
               <p>Billing</p>
               <p>Capital</p>
@@ -643,7 +863,9 @@
               <p>Terminal</p>
               <p>Treasury</p>
             </div>
-            <div class="mt-80 flex flex-col text-semi-gray gap-2">
+            <div
+              class="mt-40 flex flex-col text-lg font-sohne-var text-semi-gray gap-2"
+            >
               <p class="font-semibold">Use cases</p>
               <p>E-Commerce</p>
               <p>SaaS</p>
@@ -668,7 +890,9 @@
                 <p>Build a Stripe App</p>
               </div>
             </div>
-            <div class="mt-80 mr-40 flex flex-col text-semi-gray gap-2">
+            <div
+              class="mt-40 mr-40 flex text-lg font-sohne-var flex-col text-semi-gray gap-2"
+            >
               <p class="font-semibold">Resources</p>
               <p>Support Centre</p>
               <p>Support Plans</p>

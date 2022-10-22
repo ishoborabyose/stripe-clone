@@ -20,6 +20,9 @@ module.exports = {
         "dark-gray": "#8d95ec",
         "sky-text": "#0048e5",
         "light-gray": "#F6F9FC",
+        "title-gray": "#425466",
+        "hard-blue": "#7A73FF",
+        "soft-green": "#80E9FF",
       },
       transformOrigin: {
         0: "0",
@@ -29,6 +32,7 @@ module.exports = {
         seventy: "70%",
         "1/10": "10px",
         "1/1000": "1000px",
+        eighty: "80%",
       },
       height: {
         "1/40": "40rem",
